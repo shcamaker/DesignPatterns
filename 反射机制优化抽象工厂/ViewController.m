@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Driver.h"
 #import "BenzSportCar.h"
+#import "BmwBusinessCar.h"
 @interface ViewController ()
 
 @end
@@ -20,6 +21,9 @@
     Driver *driver = [Driver new];
     BenzSportCar *benzSportCar = (BenzSportCar *)[driver createBenzCarWithClassName:@"BenzSportCar"];
     [benzSportCar drive];
+    
+    BmwBusinessCar *bmwBusinessCar = (BmwBusinessCar *)[driver createBenzCarWithClassName:@"BmwBusinessCar"];
+    [bmwBusinessCar drive];
 }
 
 
